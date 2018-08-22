@@ -5,7 +5,6 @@
 
 Script that generates an Android App to hack SMS through WAN 
 
-![ms]
 
 ### Features:
 ### Port Forwarding using SSH Tunneling with Serveo.net
@@ -49,7 +48,7 @@ Android SDK Build-tools, Android SDK-tools, Android SDK platform-tools, Support 
 Run script:
 # git clone https://github.com/shunmukesh/spoofsms
 # cd spoofsms/
-# bash spoofsms.sh
+# bash ssms.sh
 
 ```
 
