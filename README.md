@@ -1,6 +1,5 @@
 # spoofSMS 
-## Author: https://github.com/shunmukesh/spoofsms 
-## IG: https://www.instagram.com/m.u.k.e.s.h_ 
+## Author: https://github.com/shunmukesh
 // 
 
 Script that generates an Android App to hack SMS through WAN 
