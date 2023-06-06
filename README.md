@@ -48,7 +48,7 @@ Run script:
 # git clone https://github.com/shunmukesh/spoofsms
 # cd spoofsms/
 # bash ssms.sh
-
+;;
 ```
 
 ### Donate!
