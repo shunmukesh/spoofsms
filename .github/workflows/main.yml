@@ -13,8 +13,8 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   env:
-    DASTARDLY_TARGET_URL: ${{ inputs.target-url }}
-    DASTARDLY_OUTPUT_FILE: /github/workspace/${{ inputs.output-filename }}
+    DASTARDLY_TARGET_URL: https:betadev.mycybercns.com
+    DASTARDLY_OUTPUT_FILE: /github/workspace/reports
 branding:
   icon: 'activity'
   color: 'green'
