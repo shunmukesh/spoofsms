@@ -17,4 +17,4 @@ runs:
     DASTARDLY_OUTPUT_FILE: /github/workspace/reports
 branding:
   icon: 'activity'
-  color: 'green'
+  color: 'white'
