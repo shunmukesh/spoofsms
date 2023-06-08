@@ -20,8 +20,14 @@ jobs:
           target-url: http://testhtml5.vulnweb.com/
           output-filename: dastardly-report.xml
           
-      - name: Upload Dastardly Report
-        uses: actions/upload-artifact@v2
-        with:
-          name: Dastardly Report
-          path: "**/dastardly-report.xml"
+      - name: Save Dastardly Report
+        run: mv dastardly-report.xml $GITHUB_WORKSPACE/dastardly-report.xml
+
+      - name: Commit Report
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add dastardly-report.xml
+          git commit -m "Add Dastardly Report"
+          git push origin master
+
