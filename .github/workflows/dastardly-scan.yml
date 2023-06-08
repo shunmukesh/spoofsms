@@ -23,4 +23,4 @@ jobs:
         if: always()                                   
         uses: mikepenz/action-junit-report@v3
         with:
-          report_paths: '/app/dastardly-report.xml'     
+          report_paths: '**/dastardly-report.xml'     
