@@ -14,10 +14,12 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Run Dastardly Scan
+        continue-on-error: true
         uses: PortSwigger/dastardly-github-action@v1.0.0
         with:
           target-url: http://testhtml5.vulnweb.com/
-          output-filename: /app/dastardly-report.xml
+          output-filename: dastardly-report.xml
+          
       - name: Upload Dastardly Report
         uses: actions/upload-artifact@v2
         with:
