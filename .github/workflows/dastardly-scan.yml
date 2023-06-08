@@ -3,7 +3,7 @@ name: Dastardly Scan
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   dastardly-scan:
