@@ -1,21 +1,20 @@
-name: 'Dastardly Scan Action'
-description: 'Runs a Dastardly scan against a target site'
-author: 'PortSwigger'
-on: push
-inputs:
-  target-url:
-    description: 'The full url (including scheme) of the site to scan'
-    required: true
-  output-filename:
-    description: 'The filename used for the scan report. This filepath relates to the dastardly container, and will exist in the github workspace (/github/workspace)'
-    required: false
-    default: dastardly-report.xml
-runs:
-  using: 'docker'
-  image: 'Dockerfile'
-  env:
-    DASTARDLY_TARGET_URL: https:betadev.mycybercns.com
-    DASTARDLY_OUTPUT_FILE: /github/workspace/reports
-branding:
-  icon: 'activity'
-  color: 'white'
+name: Dastardly Scan
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  dastardly-scan:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Run Dastardly Scan
+        uses: PortSwigger/dastardly-action@v1
+        with:
+          target-url: https://betadev.mycybercns.com
+          output-filename: dastardly-report.xml
