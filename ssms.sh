@@ -1,5 +1,4 @@
 #!/bin/bash
-# SPOOFSMS 
 # Author: @shunmukesh
 # Github: https://github.com/shunmukesh/spoofsms
 
