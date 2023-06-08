@@ -16,5 +16,5 @@ jobs:
       - name: Run Dastardly Scan
         uses: PortSwigger/dastardly-github-action@v1.0.0
         with:
-          target-url: https://betadev.mycybercns.com
-          output-filename: dastardly-report.xml
+          target-url: http://testhtml5.vulnweb.com/
+          output-filename: /github/workspace/dastardly-report.xml
