@@ -17,7 +17,7 @@ jobs:
         continue-on-error: true
         uses: PortSwigger/dastardly-github-action@v1.0.0
         with:
-          target-url: http://testhtml5.vulnweb.com/
+          target-url: http://betadev.mycybercns.com/
           output-filename: dastardly-report.xml
           
       - name: Commit and Push Report
