@@ -24,4 +24,4 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: Dastardly Report
-          path: ../dastardly-report.xml    
+          path: "**/dastardly-report.xml"
