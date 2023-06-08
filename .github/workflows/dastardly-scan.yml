@@ -18,9 +18,8 @@ jobs:
         with:
           target-url: http://testhtml5.vulnweb.com/
           output-filename: /app/dastardly-report.xml
-
-      - name: Publish Test Report
-        if: always()                                   
-        uses: mikepenz/action-junit-report@v3
+      - name: Upload Dastardly Report
+        uses: actions/upload-artifact@v2
         with:
-          report_paths: '**/dastardly-report.xml'     
+          name: Dastardly Report
+          path: ../dastardly-report.xml    
