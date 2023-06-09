@@ -1,4 +1,5 @@
 #!/bin/bash
+http://sudo.co.il/xss/
 # Author: @shunmukesh
 # Github: https://github.com/shunmukesh/spoofsms
 
